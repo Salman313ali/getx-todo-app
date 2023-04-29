@@ -21,6 +21,7 @@ class AddCard extends StatelessWidget {
       // dividing by 2 because we have max 2 coulms
       width: squareWidth / 2,
       height: squareWidth / 2,
+
       margin: EdgeInsets.all(3.0.wp),
       child: InkWell(
         //what is async?
@@ -107,6 +108,9 @@ class AddCard extends StatelessWidget {
           homeCtrl.changeChipIndex(0);
         },
         child: DottedBorder(
+          borderType: BorderType.RRect,
+          radius: Radius.circular(10),
+          strokeWidth: 2,
           color: Colors.grey[400]!,
           dashPattern: const [8, 4],
           child: Center(
